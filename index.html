@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body id="page">
+
+    <!-- Cabeçalho -->
+    <header id="topo">
+        <section class="topo">
+            <img src="./img/user.jpg" alt="Imagem do Usuario" title="Imagem do Usuario" class="img-user">
+            <section class="menu">
+                <nav class="menu">
+                    <ul class="align-link">
+                        <li><a href="https://api.WhatsApp.com/send?phone=55199999999"  target="_blank" class="link-header">WhatsApp</a></li>
+                        <li><a href="https://www.Facebook.com.br" target="_blank" class="link-header">Facebook</a></li>
+                        <li><a href="https://www.Instagram.com.br" target="_blank" class="link-header">Instagram</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </section>
+    </header>
+
+    <!-- Corpo principal com os formulários de Login e Cadastro -->
+    <main id="container">
+        <section class="boxForm space">
+            <!-- Formulário de Login -->
+            <div class="form-one">
+                <form action="index.html" method="GET" name="formLogin" onsubmit="return ValidarCamposFormLogin();">
+                    <label>Digite seu E-mail:</label>
+                    <input type="email" name="email"  id="email" class="camFormLogin" placeholder="Digite seu E-mail aqui...">
+                    <label>Digite sua Senha:</label>
+                    <input type="password" name="senha" id="senha" class="camFormLogin" placeholder="Digite sua Senha aqui...">
+                    <button class="btnLogin">Acessar</button>
+                </form>
+            </div>
+
+            <!-- Formulário de Cadastro -->
+            <div class="'formTwo'">
+                <form action="index.html" method="GET" name="formCadastro" onsubmit="return ValidarCamposFormCadastro();">
+                    <label>Digite seu Nome:</label>
+                    <input type="text" name="nome" id="nome" class="campFormCadastro" placeholder="Digite seu Nome aqui...">
+                    <label>Digite seu E-mail:</label>
+                    <input type="email" name="email" id="email" class="campFormCadastro" placeholder="Digite seu E-mail aqui...">
+                    <label>Digite seu Telefone (WhatsApp):</label>
+                    <input type="number" name="telefone" id="telefone" class="campFormCadastro" placeholder="Digite seu Telefone aqui...">
+                    <label>Selecione sua data de Nascimento:</label>
+                    <input type="date" name="data" id="data" class="campFormCadastro">
+                    <label>Selecione o Curso Desejado:</label>
+                    <select name="curso" id="curso" class="campFormCadastro">
+                        <option value="" >Selecione</option>
+                        <option value="1">Banco de Dados</option>
+                        <option value="2">Front-End</option>
+                        <option value="3">Back-End</option>
+                    </select>
+                    <label>Digite sua Senha:</label>
+                    <input type="password" name="senha" class="campFormCadastro" placeholder="Digite sua Senha aqui...">
+                    <label>Repita sua Senha:</label>
+                    <input type="password" name="repsenha" class="campFormCadastro" placeholder="Digite novamente sua Senha aqui...">
+                    <label>Digite uma Observação (Opcional):</label>
+                    <textarea name="obs" class="camp-cadastro-obs" placeholder="Digite sua Observação aqui..."></textarea>
+                    <button name="btnCadastro" class="btnCadastro">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="end">
+        <section class="sct_1">
+            <div class="copy">
+                <p>Todos os direitos reservados - 2025 WMBarros Treinamento em TI.</p>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Importação de arquivos JS -->
+    <script src="js/validar.js"></script>
+
+</body>
+
+</html>

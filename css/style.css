@@ -1,0 +1,192 @@
+/*  Importação do arquivo de variáveis variable.css para o arquivo style.css */
+@import url(./variable.css);
+
+/* Comando CSS para Responsividade */
+/* FlexBOX (flex) - transforma todo o conteúdo flexível a ajustes no Display */
+/* Grid - Transforma todo o Display em uma estrutura de Colunas e Linhas */
+
+/* Unidade de medida REM = 1REM = 16px: Excelente unidade de medida para textos na Responsividade */
+
+/* ID no CSS é identificado pelo caracter # */
+/* CLASS no CSS é identificado pelo caracter . */
+/* Layout geral */
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#page {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(179, 179, 179);
+    background: linear-gradient(90deg, rgba(179, 179, 179, 1) 0%, rgba(106, 196, 214, 0.6) 0%, rgba(0, 51, 82, 1) 100%);
+}
+
+#end {
+    background-color: #313131;
+    color: #ffffff;
+    padding: 16px;
+    text-align: center;
+    font-size: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+#topo {
+    background-color: #3e554e;
+    color: #ffffff;
+    padding: 42px;
+}
+
+label {
+    font-size: 18px;
+    font-style: italic;
+    color: #000000;
+}
+
+.img-user {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link-header {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.link-header:hover {
+    color: #098b0f;
+}
+
+.link-header:active {
+    color: #d80000;
+}
+
+.form-one,
+.formTwo {
+    display: flex;
+    flex-direction: column;
+    padding: 34px;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+}
+
+.boxForm {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+}
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+}
+
+.FormCadastro {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Formatação agrupada no CSS */
+.camFormLogin,
+.campFormCadastro {
+    margin-bottom: 22px;
+    width: 380px;
+    height: 35px;
+    background-color: #c5c5c5;
+    color: #000000;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.camp-cadastro-obs {
+    margin-bottom: 22px;
+    width: 380px;
+    height: 75px;
+    background-color: #c5c5c5;
+    color: #000000;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: var(--font-form);
+    font-size: 0.9rem;
+}
+
+.btnLogin {
+    width: 95px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: #090cb3;
+    color: var(--backg-font-form);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btnLogin:hover {
+    background-color: #2734ec;
+}
+
+.btnCadastro {
+    width: 95px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: #09791b;
+    color: var(--backg-font-form);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btnCadastro:hover {
+    background-color: #00c900;
+}
+
+/* Responsividade */
+@media screen and (min-width: 768px) {
+    .page {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background: rgb(179, 179, 179);
+        background: linear-gradient(90deg, rgba(179, 179, 179, 1) 0%, rgba(106, 196, 214, 0.6) 0%, rgba(0, 51, 82, 1) 100%);
+        padding: 74px 34px;
+        gap: 1rem;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+    .page {
+        background: rgb(179, 179, 179);
+        background: linear-gradient(90deg, rgba(179, 179, 179, 1) 0%, rgba(106, 196, 214, 0.6) 0%, rgba(0, 51, 82, 1) 100%);
+        padding: 64px 34px;
+        gap: 1rem;
+    }
+
+    .space {
+        margin-bottom: 36px;
+    }
+}

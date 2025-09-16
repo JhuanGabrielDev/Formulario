@@ -1,0 +1,11 @@
+:root{
+    /* A linguagem CSS também possuem variaveis para trabalhar a dinamica de desenvolvimento */
+
+--backg-header-footer: #00007c;
+--backg-card-form: #000000;
+--backg-font-form: #ffffff;
+
+--font-form: tahoma;
+--font-size: Arial;
+
+}
